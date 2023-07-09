@@ -11,10 +11,10 @@ export default function Home() {
     setImages(before => new Map(before.set(e.target.id, file)))
   }
   const handleSubmit = async () => {
-    const response = await fetch('/api/upload', {
+    const response = await fetch('/api', {
       method: 'POST',
     });
-    const data = await response.json();
+    const data = await response;
   };
   return (
     <div className="flex  items-center justify-center h-screen w-screen">
