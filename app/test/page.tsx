@@ -1,7 +1,8 @@
 import React from 'react';
 import FileUpload from '@/component/fileUpload';
 
-function App() {
+export default function App() {
+
   return (
     <div>
       <h1>ファイルアップロード</h1>
@@ -9,5 +10,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
